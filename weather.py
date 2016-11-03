@@ -4,7 +4,6 @@ import re
 import time
 import smtplib
 from bs4 import BeautifulSoup
-from email.mime.text import MIMEText
 import email.MIMEMultipart# import MIMEMultipart
 import email.MIMEText# import MIMEText
 import email.MIMEBase# import MIMEBase
@@ -120,7 +119,7 @@ while 1:
             flag1=1
         #晚上不用提醒
         sleep_now=int(time.strftime('%H',time.localtime(time.time())))
-        print (time.strftime('%H',time.localtime(time.time())))
+        # print (time.strftime('%H',time.localtime(time.time())))
         if sleep_now <= 6:
             print "系统休眠中,预计6:00再次启动"
             time.sleep(5*60*60)
