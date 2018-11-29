@@ -50,7 +50,7 @@ def rain(weather):
 def send_mail(to_list,sub,content):
     mail_host="smtp.139.com"
     mail_user="13450452462"
-    mail_pass="cxz13299"
+    mail_pass=""
     mail_postfix="139.com"
     me=mail_user+"<"+mail_user+"@"+mail_postfix+">"
     msg =email.MIMEText.MIMEText(content,_charset="utf-8")
